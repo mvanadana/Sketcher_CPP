@@ -9,5 +9,6 @@ a function named showX(),showY(),showZ() is defined, which returns a string. Thi
 ### Main File
 1.Object of Point3D is created with three parameters(x,y,z)
 2.A function call in std::cout.
+### Code
     Point3D point(1,2,3);
     std::cout<<"("<<point.showX()<<"," << point.showY()<<","<<point.showZ()<<")"<<std::endl;
