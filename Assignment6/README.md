@@ -9,8 +9,8 @@ and this string is then outputted to the user with std::cout.
 ### Function File:
 Function Definition: /src/Reader.cpp funtion void Reader::getTriangles(std::vector<Triangle> &triangles) 
 ### Code 
-auto printFileNotFoundError = [&msg]() mutable
- {
-     msg = "Error! File Not Found!";
-     return msg;
- };
+ auto ErrorFile = [ &msg ] () mutable
+    {
+         std:: string msg = "File not exist, check your file.";
+         return msg;
+    };
